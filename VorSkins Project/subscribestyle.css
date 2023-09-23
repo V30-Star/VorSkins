@@ -1,0 +1,228 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* background: grey; */
+}
+header{
+    background-color: pink;
+    color: white;
+}
+.main{
+    background-color: pink;
+}
+body{
+    background-color: #EDEDED;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 36%;
+    color: black;
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: black;
+    text-transform: uppercase;
+}
+.navbar a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover{
+    color: white;
+}
+.container{
+    width: 100%;
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#subscribe{
+    width: 100%;
+    height: 100%;
+    /* position: fixed; */
+    /* background-color: beige; */
+}
+form{
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    text-align: center;
+}
+label{
+    display: block;
+    margin: 20px 0;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+input[type="text"]:focus, textarea:focus{
+    border-bottom: 1px solid pink;
+}
+input[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: pink;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.error{
+   color: red; 
+}
+.error-border{
+    border-bottom: 1px solid red;
+}
+#berhasil{
+    color: #28a745;
+}
+/* footer */
+footer {
+    bottom: 0;
+}
+
+.footer {
+    background-color: pink;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-height: 800px){
+    footer {
+        position: static;
+    }
+}
+
+.footer .footer-left{
+    width: 30%;
+}
+
+.footer h3{
+    color: black;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 35px;
+}
+
+.footer .footer-left img {
+    width: 25%;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.footer .footer-left .credit-card{
+    width: 100%;
+}
+
+.footer .footer-copyright{
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 5%;
+    padding-left: 35px;
+}
+
+.footer .footer-right{
+    width: 30%;
+}
+
+.footer .footer-center{
+    width: 35%;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: black;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-about{
+    line-height: 20px;
+    color: black;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.footer .footer-about span{
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-media{
+    margin-top: 15px;
+}
+
+.footer .footer-media a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}

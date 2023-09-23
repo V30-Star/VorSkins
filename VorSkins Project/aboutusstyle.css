@@ -1,0 +1,237 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background-color: pink;
+    color: white;
+}
+.main{
+    background-color: pink;
+}
+body{
+    background-color: #EDEDED;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block{
+    background: pink;
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+}
+.logo{
+    font-size: 36%;
+    color: black;
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: black;
+    text-transform: uppercase;
+}
+.navbar a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover{
+    color: white;
+}
+
+.container{
+    max-width: 90%;
+    margin: 50px auto 0;   
+}
+.container .block{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .block .gambar{
+    flex: 0 0 auto;
+    width: 400px;
+}
+.container .block .gambar img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.3);
+    transition: .3s;
+    transform: scale(1);
+}
+.container .block .gambar:hover img{
+    transform: scale(1.05);
+}
+.container .block .isi{
+    flex: 0 0 auto;
+    width:calc(100% - 400px);
+    box-sizing: border-box;
+    align-self: center;
+    box-sizing: border-box;
+}
+.container .block .isi h5{
+    font-weight: 700;
+    font-size: 22px;
+    color: blue;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .container .block:nth-child(odd) .gambar
+    {
+        order: 1;
+    }
+    .container .block:nth-child(even) .gambar
+    {
+        order: 2;
+    }
+    .container .block:nth-child(odd) .isi
+    {
+        order: 2;
+       padding-left: 30px;
+    }
+    .container .block:nth-child(even) .isi
+    {
+        order: 1;
+       padding-right: 30px;
+    }
+}
+nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: white;
+}
+footer {
+    bottom: 0;
+}
+
+.footer {
+    background-color: pink;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-height: 800px){
+    footer {
+        position: static;
+    }
+}
+
+.footer .footer-left{
+    width: 30%;
+}
+
+.footer h3{
+    color: black;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 35px;
+}
+
+.footer .footer-left img {
+    width: 25%;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.footer .footer-left .credit-card{
+    width: 100%;
+}
+
+.footer .footer-copyright{
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 5%;
+    padding-left: 35px;
+}
+
+.footer .footer-right{
+    width: 30%;
+}
+
+.footer .footer-center{
+    width: 35%;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: black;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-about{
+    line-height: 20px;
+    color: black;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.footer .footer-about span{
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-media{
+    margin-top: 15px;
+}
+
+.footer .footer-media a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
